@@ -13,7 +13,8 @@ function random(number) {
     return Math.floor(Math.random()*number);
 }
 
-function draw() {
+function draw(e) {
+    e.target.style.backgroundColor = color(255,255,255,0.5);
     document.body.style.backgroundColor = color(255,255,255,0.9);
     ctx.clearRect(0,0,WIDTH,HEIGHT);
     for(let i = 0; i < 100; i++) {
