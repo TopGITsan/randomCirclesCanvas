@@ -22,4 +22,15 @@ function draw() {
         ctx.fill();
     }
 }
-btn.addEventListener('click',draw);
+
+function bgColor() {
+    let randomColor = 'rgb('+random(255)+','+random(255)+','+random(255)+')';
+    document.body.style.backgroundColor = randomColor;
+}
+
+function start() {
+    draw();
+    bgColor();
+}
+
+btn.addEventListener('click',start);
